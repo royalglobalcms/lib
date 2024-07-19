@@ -89,7 +89,7 @@
       if (active_action_set.length = 0) {
         active_action_set.show();
       } else {
-        $(this).after("<span class='" + block_class + "'><span class='customeDeleteConfirmation'><span class='designDeleteConfirmation'><p>Are you sure?</p>" + action_set + "</span></span></span>");
+        $(this).after("<span class='" + block_class + "'><div class='customeDeleteConfirmation'><div class='designDeleteConfirmation'><p>Are you sure?</p>" + action_set + "</div></div></span>");
       }   
     
       if (options.expiresIn > 0) {
