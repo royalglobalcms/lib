@@ -1,6 +1,4 @@
-*{margin:0;box-sizing:border-box;}
-body{overflow-y: scroll;}
-#dts {position:relative;margin:auto;width:60%; border: 0px solid #000;font-family: "Cairo";font-size:14px;}
+#dts {position:relative;margin:auto;width:100%; border: 0px solid #000;font-family: "Cairo";font-size:14px;}
 #dts a{display:block;text-decoration:none;color:#fff; background:#0f7686;padding:0 5px;box-sizing:border-box;margin-bottom:5px;width:100%;height: 50px;display: flex;align-items:center;}
 #dts a:hover{opacity:0.8;transition: all 0.5s ease;}
  
