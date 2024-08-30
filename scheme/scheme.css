@@ -4,6 +4,8 @@
 .scheme input[type=text]{display:block;width:100%;height:50px;background:#FFFFFF;border: 1px solid #cecece;-webkit-appearance: none;-moz-appearance: none;appearance: none;outline: none;padding:10px;margin-bottom:15px;margin-top:5px;}
 .scheme textarea{ width: 100%;padding: 10px;border: 1px solid #cecece;-webkit-appearance: none;-moz-appearance: none; appearance: none; resize:none; outline: none;height:200px;margin:10px 0;}
 .scheme input[type=file]{display:block;width:100%;height:50px;background:#FFFFFF;border: 1px dashed #000000;-webkit-appearance: none;-moz-appearance: none;appearance: none;outline: none;padding:10px;margin-bottom:15px;margin-top:5px;}
+.scheme input[type="radio"] {appearance: none;width: 15px;height: 15px;border: 1px solid #555555;border-radius: 50%;background-clip: content-box;padding: 4px;margin: 0 5px; -webkit-appearance: none;-moz-appearance: none; appearance: none; outline: none;} 
+.scheme input[type="radio"]:checked {background-color: #333} 
 .scheme input[type=submit]{display:block;width:100%;height:50px;background:#4CAF50;color:#fff;cursor:pointer;border: 0px solid #cecece;-webkit-appearance: none;-moz-appearance: none;appearance: none;outline: none;margin-bottom:30px;}
 .scheme input[type=submit]:hover{background-color: #3c8940;transition: all 0.5s ease; }
 
@@ -46,7 +48,7 @@
 .scheme .product label {width:100%;height:40px;background:#fff;margin:4px 0;display:flex;align-items:center;color:#000;padding:0px 4px;border-bottom: 2px solid #aaa;}  
 
 .scheme .product .status-loading {display: flex;justify-content: center;align-items: center;}
-.scheme .product .status-dot {width: 6px;height: 6px;margin: 0 5px;background-color: #bc53d2;border-radius: 50%;animation: status-pulse 1s infinite;}
+.scheme .product .status-dot {width: 7px;height: 7px;margin: 0 5px;background-color: #bc53d2;border-radius: 50%;animation: status-pulse 1s infinite;}
 .scheme .product .status-dot:nth-child(1) {animation-delay: 0s;}
 .scheme .product .status-dot:nth-child(2) {animation-delay: 0.2s;}
 .scheme .product .status-dot:nth-child(3) {animation-delay: 0.4s;}
