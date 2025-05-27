@@ -3,7 +3,7 @@ const SimpleEditor = (() => {
     const toolbar = document.createElement('div');
     toolbar.className = 'textEditor-toolbar';
     toolbar.innerHTML = `
-      <img src="icon/icon-bold.svg" data-cmd="bold">
+      <img src="https://cdn.jsdelivr.net/gh/royalglobalcms/lib/formEditor/icon/icon-bold.svg" data-cmd="bold">
       <img src="icon/icon-underline.svg" data-cmd="underline">
       <img src="icon/icon-italic.svg" data-cmd="italic">
       <img src="icon/icon-seperate.svg">
