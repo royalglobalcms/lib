@@ -33,7 +33,7 @@ const SimpleEditor = (() => {
       </select>
       <img src="https://cdn.jsdelivr.net/gh/royalglobalcms/lib/formEditor/icon/icon-seperate.svg">
       <img src="https://cdn.jsdelivr.net/gh/royalglobalcms/lib/formEditor/icon/icon-image.svg" class="insert-image">
-      <img src="https://cdn.jsdelivr.net/gh/royalglobalcms/lib/formEditor/icon/icon-link.svg" class="insert-link">
+ 
       <img src="https://cdn.jsdelivr.net/gh/royalglobalcms/lib/formEditor/icon/icon-seperate.svg">
       <img src="https://cdn.jsdelivr.net/gh/royalglobalcms/lib/formEditor/icon/icon-sourcecode.svg" class="toggle-source">
     `;
@@ -73,10 +73,7 @@ const SimpleEditor = (() => {
       if (url) document.execCommand('insertImage', false, url);
     };
 
-    toolbar.querySelector('.insert-link').onclick = () => {
-      const url = prompt("Enter link URL:");
-      if (url) document.execCommand('createLink', false, url);
-    };
+ 
 
     toolbar.querySelector('.toggle-source').onclick = () => {
       if (isSourceMode) {
@@ -90,12 +87,15 @@ const SimpleEditor = (() => {
     };
   }
 
-  function initAll(options = {}) {
-    const position = options.toolbarPosition || 'top';
-    document.querySelectorAll('.textEditor').forEach(editor => {
+function initAll(options = {}) {
+  const position = options.toolbarPosition || 'top';
+  document.querySelectorAll('.textEditor').forEach(editor => {
+    if (!editor.dataset.initialized) {
       setupEditor(editor, position);
-    });
-  }
+      editor.dataset.initialized = "true";
+    }
+  });
+}
 
   return { initAll };
 })();
