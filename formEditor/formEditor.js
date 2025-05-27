@@ -4,38 +4,38 @@ const SimpleEditor = (() => {
     toolbar.className = 'textEditor-toolbar';
     toolbar.innerHTML = `
       <img src="https://cdn.jsdelivr.net/gh/royalglobalcms/lib/formEditor/icon/icon-bold.svg" data-cmd="bold">
-      <img src="icon/icon-underline.svg" data-cmd="underline">
-      <img src="icon/icon-italic.svg" data-cmd="italic">
-      <img src="icon/icon-seperate.svg">
-      <img src="icon/icon-align-left.svg" data-cmd="justifyLeft">
-      <img src="icon/icon-align-center.svg" data-cmd="justifyCenter">
-      <img src="icon/icon-align-right.svg" data-cmd="justifyRight">
-      <img src="icon/icon-align-justify.svg" data-cmd="justifyFull">
-      <img src="icon/icon-seperate.svg">
-      <img src="icon/icon-horizontal-rule.svg" data-cmd="insertHorizontalRule">
-      <img src="icon/icon-seperate.svg">
+      <img src="https://cdn.jsdelivr.net/gh/royalglobalcms/lib/formEditor/icon/icon-underline.svg" data-cmd="underline">
+      <img src="https://cdn.jsdelivr.net/gh/royalglobalcms/lib/formEditor/icon/icon-italic.svg" data-cmd="italic">
+      <img src="https://cdn.jsdelivr.net/gh/royalglobalcms/lib/formEditor/icon/icon-seperate.svg">
+      <img src="https://cdn.jsdelivr.net/gh/royalglobalcms/lib/formEditor/icon/icon-align-left.svg" data-cmd="justifyLeft">
+      <img src="https://cdn.jsdelivr.net/gh/royalglobalcms/lib/formEditor/icon/icon-align-center.svg" data-cmd="justifyCenter">
+      <img src="https://cdn.jsdelivr.net/gh/royalglobalcms/lib/formEditor/icon/icon-align-right.svg" data-cmd="justifyRight">
+      <img src="https://cdn.jsdelivr.net/gh/royalglobalcms/lib/formEditor/icon/icon-align-justify.svg" data-cmd="justifyFull">
+      <img src="https://cdn.jsdelivr.net/gh/royalglobalcms/lib/formEditor/icon/icon-seperate.svg">
+      <img src="https://cdn.jsdelivr.net/gh/royalglobalcms/lib/formEditor/icon/icon-horizontal-rule.svg" data-cmd="insertHorizontalRule">
+      <img src="https://cdn.jsdelivr.net/gh/royalglobalcms/lib/formEditor/icon/icon-seperate.svg">
 
-      <img src="icon/text-color.svg" class="color-btn">
+      <img src="https://cdn.jsdelivr.net/gh/royalglobalcms/lib/formEditor/icon/text-color.svg" class="color-btn">
       <input type="color" class="color-picker" hidden>
 
-      <img src="icon/highlight-bg-color.svg" class="bgcolor-btn">
+      <img src="https://cdn.jsdelivr.net/gh/royalglobalcms/lib/formEditor/icon/highlight-bg-color.svg" class="bgcolor-btn">
       <input type="color" class="bgcolor-picker" hidden>
 
-      <img src="icon/icon-seperate.svg">
-      <img src="icon/icon-list-num-default.svg" data-cmd="insertUnorderedList">
-      <img src="icon/list-bull-disc.svg" data-cmd="insertOrderedList">
+      <img src="https://cdn.jsdelivr.net/gh/royalglobalcms/lib/formEditor/icon/icon-seperate.svg">
+      <img src="https://cdn.jsdelivr.net/gh/royalglobalcms/lib/formEditor/icon/icon-list-num-default.svg" data-cmd="insertUnorderedList">
+      <img src="https://cdn.jsdelivr.net/gh/royalglobalcms/lib/formEditor/icon/list-bull-disc.svg" data-cmd="insertOrderedList">
 
-      <img src="icon/icon-seperate.svg">
+      <img src="https://cdn.jsdelivr.net/gh/royalglobalcms/lib/formEditor/icon/icon-seperate.svg">
       <select class="font-size">
         ${[...Array(7)].map((_, i) =>
           `<option value="${i + 1}" ${i === 2 ? "selected" : ""}>Size ${i + 1}</option>`
         ).join('')}
       </select>
-      <img src="icon/icon-seperate.svg">
-      <img src="icon/icon-image.svg" class="insert-image">
-      <img src="icon/icon-link.svg" class="insert-link">
-      <img src="icon/icon-seperate.svg">
-      <img src="icon/icon-sourcecode.svg" class="toggle-source">
+      <img src="https://cdn.jsdelivr.net/gh/royalglobalcms/lib/formEditor/icon/icon-seperate.svg">
+      <img src="https://cdn.jsdelivr.net/gh/royalglobalcms/lib/formEditor/icon/icon-image.svg" class="insert-image">
+      <img src="https://cdn.jsdelivr.net/gh/royalglobalcms/lib/formEditor/icon/icon-link.svg" class="insert-link">
+      <img src="https://cdn.jsdelivr.net/gh/royalglobalcms/lib/formEditor/icon/icon-seperate.svg">
+      <img src="https://cdn.jsdelivr.net/gh/royalglobalcms/lib/formEditor/icon/icon-sourcecode.svg" class="toggle-source">
     `;
     return toolbar;
   }
