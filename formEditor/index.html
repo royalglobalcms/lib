@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Multiple Editors</title>
+  <link rel="stylesheet" href="formEditor.css">
+  <script src="formEditor.js"></script>
+</head>
+<body>
+
+ 
+  <div class="textEditor"></div>
+  <br>
+  <div class="textEditor"></div>
+  <br>
+  <div class="textEditor"></div>
+
+  
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+          SimpleEditor.initAll({ toolbarPosition: 'bottom' }); // or 'top'
+    });
+  </script>
+</body>
+</html>
+
+   
+ 
