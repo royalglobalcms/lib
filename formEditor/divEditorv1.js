@@ -22,9 +22,10 @@ const SimpleEditor = (() => {
       <input type="color" class="bgcolor-picker" hidden>
 
       <img src="https://cdn.jsdelivr.net/gh/royalglobalcms/lib/formEditor/icon/icon-seperate.svg">
-      <img src="https://cdn.jsdelivr.net/gh/royalglobalcms/lib/formEditor/icon/icon-list-num-default.svg" data-cmd="insertUnorderedList">
-      <img src="https://cdn.jsdelivr.net/gh/royalglobalcms/lib/formEditor/icon/list-bull-disc.svg" data-cmd="insertOrderedList">
-
+  
+      <img src="https://cdn.jsdelivr.net/gh/royalglobalcms/lib/formEditor/icon/list-bull-disc.svg" data-cmd="insertUnorderedList">   
+      <img src="https://cdn.jsdelivr.net/gh/royalglobalcms/lib/formEditor/icon/icon-list-num-default.svg" data-cmd="insertOrderedList">
+  
       <img src="https://cdn.jsdelivr.net/gh/royalglobalcms/lib/formEditor/icon/icon-seperate.svg">
       <select class="font-size">
         ${[...Array(7)].map((_, i) =>
@@ -33,6 +34,8 @@ const SimpleEditor = (() => {
       </select>
       <img src="https://cdn.jsdelivr.net/gh/royalglobalcms/lib/formEditor/icon/icon-seperate.svg">
       <img src="https://cdn.jsdelivr.net/gh/royalglobalcms/lib/formEditor/icon/icon-image.svg" class="insert-image">
+      <img src="https://cdn.jsdelivr.net/gh/royalglobalcms/lib/formEditor/icon/icon-link.svg" class="insert-link">
+ 
  
       <img src="https://cdn.jsdelivr.net/gh/royalglobalcms/lib/formEditor/icon/icon-seperate.svg">
       <img src="https://cdn.jsdelivr.net/gh/royalglobalcms/lib/formEditor/icon/icon-sourcecode.svg" class="toggle-source">
@@ -73,7 +76,14 @@ const SimpleEditor = (() => {
       if (url) document.execCommand('insertImage', false, url);
     };
 
- 
+    toolbar.querySelector('.insert-link').onclick = () => {
+      const url = prompt("Enter URL:");
+      if (url) {
+        document.execCommand("createLink", false, url);
+      }
+    };
+
+  
 
     toolbar.querySelector('.toggle-source').onclick = () => {
       if (isSourceMode) {
